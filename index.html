@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Blog Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>     
+<body>
+    <div class="container">
+        <header>
+            <h1>Example</h1>
+            <p>Generate Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aperiam, molestiae, veritatis at nobis facilis tempora tenetur cumque voluptatibus totam veniam. Sunt rerum reiciendis in illum et iste velit laborum?</p>
+        </header>
+
+        <div class="input-section">
+            <label for="youtube-link">Input 1</label>
+            <input type="text" id="youtube-link" placeholder="https://youtu.be/example">
+            
+        </div>
+
+        <div class="input-section">
+            <label for="youtube-link">Input 2</label>
+            <input type="text" id="youtube-link" placeholder="https://youtu.be/example">
+            
+        </div>
+        <div class="input-section">
+            <label for="youtube-link">Input 3</label>
+            <input type="text" id="youtube-link" placeholder="https://youtu.be/example">
+            <button onclick="generateArticle()">Generate</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Generated Blog Article</h2>
+            <div id="generated-article">
+                <!-- The generated blog article will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function generateArticle() {
+            const article = "Are you a Django developer looking for an easier way to incorporate external static files into your HTML template files? If so, you may want to consider checking out AutoJango – a VSCode Extension that can help save you time and stress. AutoJango allows you to easily add static tags to your HTML template files with a simple click of a button. With AutoJango, you can easily utilize external static files like JavaScript files, CSS files, and images without having to manually add a static tag. It's a very helpful tool for any large-scale Django projects. To install AutoJango, all you need to do is simply download the VSCode extension – it's that simple. Then, you can navigate to the HTML file that you want to apply AutoJango to and type Command + Shift + P. This will bring up the command palette, where you can type AutoJango and click on it, thus adding the necessary static tags. You also have the option of linking to a CDN or local file – AutoJango allows you to do both. Overall, AutoJango is a great tool for simplifying your workflow and ensuring that your Django project runs smoothly.";
+            document.getElementById('generated-article').innerText = article;
+        }
+    </script>
+</body>
+</html>
